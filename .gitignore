@@ -1,0 +1,5 @@
+*.min.*
+*.map
+
+img/*.ai
+img/*.eps
