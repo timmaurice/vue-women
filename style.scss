@@ -1,0 +1,104 @@
+body {
+  align-items: center;
+  background: #82C6C3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+button {
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #82C6C3;
+  font-size: 30px;
+  transition: all .3s ease-in-out;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 2px 2px rgba(black, 0.1);
+    outline: none;
+  }
+}
+
+.bodypart {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+svg > g {
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+
+  &.head0,
+  &.body0,
+  &.feet0 {
+    opacity: 1;
+  }
+}
+
+/* Head */
+#head {
+  svg {
+    position: relative;
+    left: -32px;
+    z-index: 2;
+  }
+
+  .st0{fill:#37373f}
+  .st1{fill:#ce8d76}
+  .st2{fill:#f2ab8f}
+  .st3{fill:#b57662}
+  .st4{fill:#222228}
+  .st5{opacity: .5; fill:#d69f8a}
+  .st6{fill:#0a0705}
+  .st7{fill:#c96565}
+  .st8{fill:#fff}
+  .st11{fill:#2c2c33}
+}
+
+/* Body */
+#body {
+  svg {
+    margin-top: -135px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .st0{fill:#f2ab8f}
+  .st1{fill:#fff}
+  .st2{fill:#ce8d76}
+  .st3{fill:#fffed7}
+  .st4{fill:#4a4e60}
+  .st5{fill:#30323d}
+  .st6{fill:#a5a5a5}
+  .st8{fill:#6d6d6d}
+  .st9{fill:#efdcf4}
+  .st10{fill:#262626}
+}
+
+/* Feet */
+#legs {
+  svg {
+    margin-top: -160px;
+    left: -17px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .st0{opacity:.1;fill:#000100}
+  .st1{fill:#2b2c2d}
+  .st2{fill:#f2ab8f}
+  .st3{fill:#5d5d5d}
+  .st4{fill:#f2f2f2}
+  .st6{fill:#896449}
+  .st8{fill:#4f1c20}
+}
